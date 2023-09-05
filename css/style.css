@@ -116,6 +116,9 @@ table {
   margin: 0px;
   margin-left: 10px;
 }
+.user {
+  border-radius: 15px;
+}
 nav {
   display: none;
 }
