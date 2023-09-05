@@ -1,0 +1,166 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* header */
+.header {
+  background-color: #ef9590;
+  padding-left: 6%;
+  height: 70px;
+}
+.logo,
+.search,
+.info {
+  display: inline-block;
+  max-width: (100%/3);
+}
+.logo {
+  display: inline-block;
+}
+.logo-img {
+  padding: 0px;
+  margin: 0px;
+  height: 70%;
+  width: 50%;
+  flex-shrink: 0;
+  margin: 0px;
+  vertical-align: middle;
+}
+.name {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  flex-shrink: 0;
+  color: #1eb197;
+  font-size: 18px;
+  float: right;
+  margin-top: 4%;
+  margin-right: 15%;
+}
+.search-box {
+  color: #dacdcd;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 78.5%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+}
+.search-button {
+  width: 20%;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 0px 5px 5px 0px;
+  background: #ef9590;
+  padding: 0px;
+  margin: 0px;
+}
+.info {
+  display: inline-block;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.information {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+}
+.menu {
+  padding-left: 10px;
+  color: black;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .name {
+    display: none !important;
+  }
+  .logo-img {
+    height: 100%;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  .search-box {
+    width: 85%;
+  }
+  .search-button {
+    width: 15%;
+  }
+  .info {
+    margin: 0px;
+    padding: 0px;
+  }
+  .menu {
+    margin-top: 13%;
+    margin-left: 20%;
+    opacity: 1;
+  }
+  .information {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .menu {
+    opacity: 1;
+    float: right;
+    width: 100%;
+    margin-top: 12%;
+  }
+  .info {
+    float: right;
+  }
+  .search {
+    display: none;
+  }
+  .information {
+    display: none;
+  }
+}
